@@ -27,6 +27,10 @@ if [ $? -ne 0 ]; then
        exit 1
 fi
 
+if [ `id -u` = 0 ]; then
+       echo >&2 "Do not run setup as root."
+       exit 1
+fi
 GIT_USERNAME="customer"
 GIT_USEREMAIL="customer@company.com"
 
