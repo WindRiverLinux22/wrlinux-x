@@ -108,7 +108,6 @@
     <project name="external/yocto/github.com.OpenSC.libp11" remote="base" path="layers/meta-openembedded-dl-3.2/git/github.com.OpenSC.libp11.git" bare="True"/>
     <project name="external/yocto/github.com.abseil.abseil-cpp" remote="base" path="layers/meta-openembedded-dl-3.2/git/github.com.abseil.abseil-cpp.git" bare="True"/>
     <project name="external/yocto/github.com.google.re2" remote="base" path="layers/meta-openembedded-dl-3.2/git/github.com.google.re2.git" bare="True"/>
-    <project name="external/yocto/github.com.google.googletest" remote="base" path="layers/meta-openembedded-dl-3.2/git/github.com.google.googletest.git" bare="True"/>
     <project name="external/yocto/github.com.grpc.grpc" remote="base" path="layers/meta-openembedded-dl-3.2/git/github.com.grpc.grpc.git" bare="True"/>
     <project name="external/yocto/github.com.opencv.opencv" remote="base" path="layers/meta-openembedded-dl-3.2/git/github.com.opencv.opencv.git" bare="True"/>
     <project name="external/yocto/github.com.opencv.opencv_contrib" remote="base" path="layers/meta-openembedded-dl-3.2/git/github.com.opencv.opencv_contrib.git" bare="True"/>
