@@ -153,3 +153,4 @@
     <project name="external/yocto/github.com.facebook.zstd" remote="base" path="layers/oe-core-dl-3.2/git/github.com.facebook.zstd.git" bare="True"/>
     <project name="external/yocto/github.com.Cyan4973.xxHash" remote="base" path="layers/oe-core-dl-3.2/git/github.com.Cyan4973.xxHash.git" bare="True"/>
     <project name="external/yocto/gitlab.gnome.org.GNOME.gi-docgen" remote="base" path="layers/oe-core-dl-3.2/git/gitlab.gnome.org.GNOME.gi-docgen.git" bare="True"/>
+    <project name="external/yocto/github.com.seccomp.libseccomp" remote="base" path="layers/oe-core-dl-3.2/git/github.com.seccomp.libseccomp.git" bare="True"/>
