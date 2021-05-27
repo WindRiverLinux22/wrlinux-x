@@ -127,6 +127,10 @@ class Setup():
 
         self.repo_no_fetch = False
 
+        # Default to always prune. This prevents sync failures when upstream
+        # moves tags or deletes branch foo and creates foo/bar
+        self.prune = True
+
         self.prime = True
 
         # Set the install_dir
@@ -1494,9 +1498,11 @@ class Setup():
     def call_repo_sync(self, args):
         logger.debug('Starting')
         repo = self.tools['repo']
-        cmd = [repo, 'sync', '--prune']
+        cmd = [repo, 'sync']
         # disable use of /clone.bundle on HTTP/HTTPS
         cmd.append('--no-clone-bundle')
+        if self.prune:
+            cmd.append('--prune')
         if self.force_sync:
             cmd.append(self.force_sync)
         log_it = 1
@@ -1568,6 +1574,10 @@ class Setup():
     def set_no_prime(self, no_prime):
         logger.debug('Setting priming to %s' % (not no_prime))
         self.prime = not no_prime
+
+    def set_no_prune(self, no_prune):
+        logger.debug('Setting repo sync prune behavior to %s' % (not no_prune))
+        self.prune = not no_prune
 
     def touch(self, fn):
         logger.debug("Creating %s" % fn)

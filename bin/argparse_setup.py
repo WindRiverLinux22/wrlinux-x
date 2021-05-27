@@ -101,6 +101,11 @@ class Argparse_Setup:
                 self.setup.set_repo_rev(parsed_args.repo_branch)
             del parsed_args.repo_branch
 
+        if parsed_args.repo_no_prune:
+            if self.setup:
+                self.setup.set_no_prune(parsed_args.repo_no_prune)
+            del parsed_args.repo_no_prune
+
         # Look for list options
         if parsed_args.list_distros:
             if self.setup:
@@ -240,6 +245,7 @@ class Argparse_Setup:
         self.repo_args.add_argument('--repo-depth', metavar='DEPTH', help='Sets repo --depth; see repo init --help (note: if set, a value of >= 2 is required)')
         self.repo_args.add_argument('--repo-force-sync', action='store_true', help='Sets repo --force-sync; see repo sync --help')
         self.repo_args.add_argument('--repo-no-fetch', help='Do all the setup but do not call repo sync', action="store_true")
+        self.repo_args.add_argument('--repo-no-prune', help='When calling repo sync do not use --prune. May cause sync failures.', action="store_true")
 
         repo_url = ""
         if 'REPO_URL' in os.environ:
