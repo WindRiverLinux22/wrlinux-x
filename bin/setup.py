@@ -45,6 +45,9 @@ isatty = sys.stdout.isatty()
 sys.stdout = logger_setup.LoggerOut(logger.info, isatty)
 sys.stderr = logger_setup.LoggerOut(logger.error, isatty)
 
+# Last shared object between linux-yocto and linux-yocto-dev currently is...
+KERNEL_MERGE_BASE="v5.10"
+
 class Setup():
 
     tool_list = ['repo', 'git']
@@ -123,6 +126,8 @@ class Setup():
         self.debug_lvl = 0
 
         self.repo_no_fetch = False
+
+        self.prime = True
 
         # Set the install_dir
         # Use the path from this file.  Note bin has to be dropped.
@@ -1412,6 +1417,7 @@ class Setup():
             args.append('--local-only')
             local_only = 1
         try:
+            self.prime_kernel_repo(args)
             self.call_repo_sync(args)
         except Exception as e:
             if not local_only:
@@ -1424,6 +1430,66 @@ class Setup():
                     raise
 
         logger.debug('Done')
+
+    def parse_manifest_for_kernel(self):
+        import xml.etree.ElementTree as ET
+
+        linux_yocto_path = ""
+        linux_yocto_dev_path = ""
+        tree = ET.parse(os.path.join(self.project_dir, 'default.xml'))
+        root = tree.getroot()
+        for project in root.iter('project'):
+            name = project.attrib['name']
+            if name.endswith('linux-yocto'):
+                linux_yocto_path = name
+            if name.endswith('linux-yocto-dev'):
+                linux_yocto_dev_path = name
+
+        return (linux_yocto_path, linux_yocto_dev_path)
+
+    # If manifest contains linux-yocto and linux-yocto-dev sync linux-yocto first
+    # and copy it to linux-yocto-dev to reduce download
+    def prime_kernel_repo(self, args):
+        if not self.prime:
+            logger.debug('Priming is disabled')
+            return
+
+        # do not prime if REPO_MIRROR_LOCATION is set
+        if os.getenv('REPO_MIRROR_LOCATION'):
+            logger.debug('Skipping priming because REPO_MIRROR_LOCATION is set')
+            return
+
+        (linux_yocto_path, linux_yocto_dev_path) = self.parse_manifest_for_kernel()
+
+        # only prime the download if there is a linux-yocto-dev repo
+        if linux_yocto_dev_path:
+            # in mirror mode the repos are bare clone in the project dir
+            prime_dir = self.project_dir
+            if self.mirror == False:
+                # in non-mirror mode the objects are located in the .repo directory
+                prime_dir = os.path.join(self.project_dir, '.repo/project-objects')
+                os.mkdir(prime_dir)
+
+            logger.info('Preloading common git objects...')
+            subdir = os.path.dirname(linux_yocto_path)
+            if subdir:
+                os.mkdir(os.path.join(prime_dir, subdir))
+
+            cmd = [self.tools['git'], 'clone', '--bare', '--single-branch', '--branch',
+                   KERNEL_MERGE_BASE, '%s/%s' % (self.base_url, linux_yocto_path) ]
+            utils_setup.run_cmd(cmd, environment=self.env,
+                                cwd=os.path.join(prime_dir, subdir))
+
+            # remove origin so there isn't any conflict with repo
+            cmd = [self.tools['git'], 'remote', 'remove', 'origin']
+            utils_setup.run_cmd(cmd, environment=self.env,
+                                cwd=os.path.join(prime_dir, linux_yocto_path + '.git'))
+
+            # the objects are stored in bare repos so they end with .git
+            shutil.copytree(os.path.join(prime_dir, linux_yocto_path + '.git'),
+                            os.path.join(prime_dir, linux_yocto_dev_path + '.git'),
+                            copy_function=os.link)
+
 
     def call_repo_sync(self, args):
         logger.debug('Starting')
@@ -1499,6 +1565,9 @@ class Setup():
     def set_debug_env(self):
         self.env["REPO_CURL_VERBOSE"] = '1'
 
+    def set_no_prime(self, no_prime):
+        logger.debug('Setting priming to %s' % (not no_prime))
+        self.prime = not no_prime
 
     def touch(self, fn):
         logger.debug("Creating %s" % fn)

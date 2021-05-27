@@ -65,6 +65,11 @@ class Argparse_Setup:
                 self.setup.set_base_branch(parsed_args.base_branch)
             del parsed_args.base_branch
 
+        if parsed_args.no_prime:
+            if self.setup:
+                self.setup.set_no_prime(parsed_args.no_prime)
+            del parsed_args.no_prime
+
         # Parse repo option
         if (parsed_args.repo_verbose):
             if self.setup:
@@ -221,6 +226,8 @@ class Argparse_Setup:
         self.base_args.add_argument('--base-branch', metavar="BRANCH", help='Base branch identifier %s' % (setup_base_branch))
 
         self.parser.add_argument('--mirror', help='Do not construct a project, instead construct a mirror of the repositories that would have been used to construct a project (requires a Layer Selection argument)', action='store_true')
+
+        self.parser.add_argument('--no-prime', help='Control whether to download common objects before repo sync. Default: True', action="store_true")
 
     def add_repo_options(self):
         self.repo_args = self.parser.add_argument_group('repo Settings')
