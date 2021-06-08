@@ -119,3 +119,4 @@
     <project name="external/yocto/github.com.linux-audit.audit-userspace" remote="base" path="layers/meta-openembedded-dl-3.2/git/github.com.linux-audit.audit-userspace.git" bare="True"/>
     <project name="external/yocto/github.com.google.snappy" remote="base" path="layers/meta-openembedded-dl-3.2/git/github.com.google.snappy.git" bare="True"/>
     <project name="external/yocto/github.com.google.benchmark" remote="base" path="layers/meta-openembedded-dl-3.2/git/github.com.google.benchmark.git" bare="True"/>
+    <project name="external/yocto/github.com.bats-core.bats-core" remote="base" path="layers/meta-openembedded-dl-3.2/git/github.com.bats-core.bats-core.git" bare="True"/>
