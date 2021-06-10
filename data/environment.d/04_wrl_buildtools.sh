@@ -59,6 +59,13 @@ buildtools_setup() {
 		fi
 	fi
 
+	# On the build server with older gcc, rerun setup may make
+	# buildtools different from the first run, check if gcc is
+	# provided by extended buildtools to fix the gap
+	if [ $(which gcc 2>&1 | grep "buildtools-extended-standalone") ] && [ -z "${BUILDTOOLS_TYPE}" ]; then
+		BUILDTOOLS_TYPE=extended
+	fi
+
 	if [ -z "${BUILDTOOLS_TYPE}" ]; then
 		BUILDTOOLS_TYPE=basic
 	fi
