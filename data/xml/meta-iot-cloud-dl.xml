@@ -1,0 +1,1 @@
+    <project name="external/yocto/github.com.Azure.azure-c-shared-utility" remote="base" path="layers/meta-iot-cloud-dl/git/github.com.Azure.azure-c-shared-utility.git" bare="True"/>
