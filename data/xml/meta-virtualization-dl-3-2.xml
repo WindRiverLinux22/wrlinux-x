@@ -29,3 +29,4 @@
     <project name="external/yocto/github.com.jirutka.sloci-image" remote="base" path="layers/meta-virtualization-dl-3.2/git/github.com.jirutka.sloci-image.git" bare="True"/>
     <project name="external/yocto/github.com.openvswitch.ovs" remote="base" path="layers/meta-virtualization-dl-3.2/git/github.com.openvswitch.ovs.git" bare="True"/>
     <project name="external/yocto/github.com.opencontainers.umoci" remote="base" path="layers/meta-virtualization-dl-3.2/git/github.com.opencontainers.umoci.git" bare="True"/>
+    <project name="external/yocto/github.com.containers.skopeo" remote="base" path="layers/meta-virtualization-dl-3.2/git/github.com.containers.skopeo" bare="True"/>
