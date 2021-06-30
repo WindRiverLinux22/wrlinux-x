@@ -20,3 +20,4 @@
     <project name="external/yocto/github.com.awslabs.aws-c-mqtt" remote="base" path="layers/meta-iot-cloud-dl/git/github.com.awslabs.aws-c-mqtt.git" bare="True"/>
     <project name="external/yocto/github.com.awslabs.aws-checksums" remote="base" path="layers/meta-iot-cloud-dl/git/github.com.awslabs.aws-checksums.git" bare="True"/>
     <project name="external/yocto/github.com.aws.s2n-tls" remote="base" path="layers/meta-iot-cloud-dl/git/github.com.aws.s2n-tls.git" bare="True"/>
+    <project name="external/yocto/github.com.awslabs.aws-c-auth" remote="base" path="layers/meta-iot-cloud-dl/git/github.com.awslabs.aws-c-auth.git" bare="True"/>
