@@ -17,3 +17,4 @@
     <project name="external/yocto/github.com.awslabs.aws-c-compression" remote="base" path="layers/meta-iot-cloud-dl/git/github.com.awslabs.aws-c-compression.git" bare="True"/>
     <project name="external/yocto/github.com.aws.aws-iot-device-sdk-cpp-v2" remote="base" path="layers/meta-iot-cloud-dl/git/github.com.aws.aws-iot-device-sdk-cpp-v2.git" bare="True"/>
     <project name="external/yocto/github.com.awslabs.aws-crt-python" remote="base" path="layers/meta-iot-cloud-dl/git/github.com.awslabs.aws-crt-python.git" bare="True"/>
+    <project name="external/yocto/github.com.awslabs.aws-c-mqtt" remote="base" path="layers/meta-iot-cloud-dl/git/github.com.awslabs.aws-c-mqtt.git" bare="True"/>
