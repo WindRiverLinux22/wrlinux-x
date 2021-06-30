@@ -7,3 +7,4 @@
     <project name="external/yocto/github.com.Azure.umock-c" remote="base" path="layers/meta-iot-cloud-dl/git/github.com.Azure.umock-c.git" bare="True"/>
     <project name="external/yocto/github.com.Azure.azure-umqtt-c" remote="base" path="layers/meta-iot-cloud-dl/git/github.com.Azure.azure-umqtt-c.git" bare="True"/>
     <project name="external/yocto/github.com.awslabs.aws-c-event-stream" remote="base" path="layers/meta-iot-cloud-dl/git/github.com.awslabs.aws-c-event-stream.git" bare="True"/>
+    <project name="external/yocto/github.com.awslabs.aws-c-common" remote="base" path="layers/meta-iot-cloud-dl/git/github.com.awslabs.aws-c-common.git" bare="True"/>
