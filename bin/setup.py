@@ -46,7 +46,7 @@ sys.stdout = logger_setup.LoggerOut(logger.info, isatty)
 sys.stderr = logger_setup.LoggerOut(logger.error, isatty)
 
 # Last shared object between linux-yocto and linux-yocto-dev currently is...
-KERNEL_MERGE_BASE="v5.10"
+KERNEL_MERGE_BASE="v5.13"
 
 class Setup():
 
