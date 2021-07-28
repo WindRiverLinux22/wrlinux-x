@@ -122,3 +122,4 @@
     <project name="external/yocto/github.com.google.benchmark" remote="base" path="layers/meta-openembedded-dl-3.2/git/github.com.google.benchmark.git" bare="True"/>
     <project name="external/yocto/github.com.bats-core.bats-core" remote="base" path="layers/meta-openembedded-dl-3.2/git/github.com.bats-core.bats-core.git" bare="True"/>
     <project name="external/yocto/github.com.yasm.yasm" remote="base" path="layers/meta-openembedded-dl-3.2/git/github.com.yasm.yasm.git" bare="True"/>
+    <project name="external/yocto/github.com.HewlettPackard.netperf" remote="base" path="layers/meta-openembedded-dl-3.2/git/github.com.HewlettPackard.netperf.git" bare="True"/>
