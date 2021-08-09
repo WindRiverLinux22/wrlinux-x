@@ -44,7 +44,7 @@ WRTEMPLATE ?= "####DEFAULTWRTEMPLATE####"
 # Selectively enable or disable the template 'image.inc' additions to a given
 # image recipe.
 # (the default value is 1)
-#WRTEMPLATE_IMAGE_pn-<recipe> = "0"
+#WRTEMPLATE_IMAGE:pn-<recipe> = "0"
 
 # Disable or enable processing of the special 'bsp-pkgs.*' template pieces.
 # (the default value is 1)
@@ -232,11 +232,11 @@ IMAGE_FSTYPES += "tar.bz2"
 # run tests against any SDK that are built. To enable this uncomment these lines.
 # See classes/test{image,sdk}.bbclass for further details.
 #IMAGE_CLASSES += "testimage testsdk"
-#TESTIMAGE_AUTO_qemuall = "1"
+#TESTIMAGE_AUTO:qemuall = "1"
 # Note: test image requires sshd and scp support on the target, this can be added by
 # adding one of the following two lines.
-#IMAGE_INSTALL_append = " openssh-sshd openssh-scp"
-#IMAGE_INSTALL_append = " dropbear"
+#IMAGE_INSTALL:append = " openssh-sshd openssh-scp"
+#IMAGE_INSTALL:append = " dropbear"
 
 #
 # Interactive shell configuration
@@ -307,7 +307,7 @@ VIRTUAL-RUNTIME_initscripts = "systemd-compat-units"
 KERNEL_FEATURES:append = " cfg/systemd.scc"
 
 # use sysvinit as the default init manager
-#DISTRO_FEATURES_append = " sysvinit"
+#DISTRO_FEATURES:append = " sysvinit"
 #DISTRO_FEATURES_BACKFILL_CONSIDERED += "systemd"
 #VIRTUAL-RUNTIME_init_manager = "sysvinit"
 #VIRTUAL-RUNTIME_initscripts = "initscripts"
