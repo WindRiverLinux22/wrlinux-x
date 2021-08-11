@@ -122,3 +122,5 @@
     <project name="external/yocto/github.com.HewlettPackard.netperf" remote="base" path="layers/meta-openembedded-dl-3.4/git/github.com.HewlettPackard.netperf.git" bare="True"/>
     <project name="external/yocto/github.com.CESNET.libyang" remote="base" path="layers/meta-openembedded-dl-3.4/git/github.com.CESNET.libyang.git" bare="True"/>
     <project name="external/yocto/github.com.jemalloc.jemalloc" remote="base" path="layers/meta-openembedded-dl-3.4/git/github.com.jemalloc.jemalloc.git" bare="True"/>
+    <project name="external/yocto/git.cryptomilk.org.projects.cmocka" remote="base" path="layers/meta-openembedded-dl-3.2/git/git.cryptomilk.org.projects.cmocka" bare="True" />
+
