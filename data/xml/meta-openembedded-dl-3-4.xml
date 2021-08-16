@@ -122,3 +122,4 @@
     <project name="external/yocto/github.com.jemalloc.jemalloc" remote="base" path="layers/meta-openembedded-dl-3.4/git/github.com.jemalloc.jemalloc.git" bare="True"/>
     <project name="external/yocto/git.cryptomilk.org.projects.cmocka" remote="base" path="layers/meta-openembedded-dl-3.4/git/git.cryptomilk.org.projects.cmocka.git" bare="True" />
 
+    <project name="external/yocto/github.com.storaged-project.blivet" remote="base" path="layers/meta-openembedded-dl-3.4/git/github.com.storaged-project.blivet.git" bare="True"/>
