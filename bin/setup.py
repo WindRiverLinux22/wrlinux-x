@@ -540,6 +540,10 @@ class Setup():
             for l in self.machines:
                 if not procConfig(machine=l):
                     allfound = False
+                else:
+                    if l not in self.index.get_machines(self.base_branch, settings.DEFAULT_LAYER_COMPAT_TAG):
+                        logger.critical('Unsupported machine: %s' % l)
+                        self.exit(1)
 
         for l in self.recipes:
             if not procConfig(recipe=l):
@@ -548,6 +552,10 @@ class Setup():
         for l in self.wrtemplates:
             if not procConfig(wrtemplate=l):
                 allfound = False
+
+        if not allfound:
+            logger.critical('Please correct the missing items, exiting.')
+            self.exit(1)
 
         # Add all layers -- if necessary
         if self.all_layers == True:
@@ -567,10 +575,6 @@ class Setup():
                             recommendedQueue.append( (lindex, layerBranch) )
                         else:
                             requiredQueue.append( (lindex, layerBranch) )
-
-        if not allfound:
-            logger.critical('Please correct the missing items, exiting.')
-            self.exit(1)
 
         # Compute requires and recommended layers...
 
