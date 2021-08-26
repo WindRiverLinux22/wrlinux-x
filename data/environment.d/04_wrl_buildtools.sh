@@ -16,7 +16,7 @@
 # Download, install and load the buildtools tarball (as needed)
 
 # Buildtools location can change -- this is the path on top of the BASEURL
-BUILDTOOLS_REMOTE="${BUILDTOOLS_REMOTE:-buildtools-standalone-10.21.29a.0}"
+BUILDTOOLS_REMOTE="${BUILDTOOLS_REMOTE:-buildtools-standalone-10.21.29a.1}"
 
 # Special windshare folders to search
 BUILDTOOLS_FOLDERS="WRLinux-CD-Core"
