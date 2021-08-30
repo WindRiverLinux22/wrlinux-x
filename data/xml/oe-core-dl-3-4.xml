@@ -154,3 +154,4 @@
     <project name="external/yocto/github.com.tianocore.edk2-cmocka" remote="base" path="layers/oe-core-dl-3.4/git/github.com.tianocore.edk2-cmocka.git" bare="True"/>
     <project name="external/yocto/github.com.CLIUtils.CLI11" remote="base" path="layers/oe-core-dl-3.4/git/github.com.CLIUtils.CLI11.git" bare="True"/>
     <project name="external/yocto/git.eclipse.org.r.tcf.org.eclipse.tcf.agent" remote="base" path="layers/oe-core-dl-3.4/git/git.eclipse.org.r.tcf.org.eclipse.tcf.agent.git" bare="True"/>
+    <project name="external/yocto/github.com.meta-rust.rust-hello-world" remote="base" path="layers/oe-core-dl-3.4/git/github.com.meta-rust.rust-hello-world.git" bare="True"/>
