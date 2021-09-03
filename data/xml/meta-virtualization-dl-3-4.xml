@@ -33,3 +33,4 @@
     <project name="external/yocto/github.com.cpuguy83.go-md2man" remote="base" path="layers/meta-virtualization-dl-3.4/git/github.com.cpuguy83.go-md2man.git" bare="True"/>
     <project name="external/yocto/github.com.containers.conmon" remote="base" path="layers/meta-virtualization-dl-3.4/git/github.com.containers.conmon.git" bare="True"/>
     <project name="external/yocto/github.com.rootless-containers.slirp4netns" remote="base" path="layers/meta-virtualization-dl-3.4/git/github.com.rootless-containers.slirp4netns.git" bare="True"/>
+    <project name="external/yocto/github.com.alecthomas.gometalinter" remote="base" path="layers/meta-virtualization-dl-3.4/git/github.com.alecthomas.gometalinter.git" bare="True"/>
