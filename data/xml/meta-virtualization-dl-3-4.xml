@@ -35,3 +35,4 @@
     <project name="external/yocto/github.com.rootless-containers.slirp4netns" remote="base" path="layers/meta-virtualization-dl-3.4/git/github.com.rootless-containers.slirp4netns.git" bare="True"/>
     <project name="external/yocto/github.com.alecthomas.gometalinter" remote="base" path="layers/meta-virtualization-dl-3.4/git/github.com.alecthomas.gometalinter.git" bare="True"/>
     <project name="external/yocto/github.com.containers.podman" remote="base" path="layers/meta-virtualization-dl-3.4/git/github.com.containers.podman.git" bare="True"/>
+    <project name="external/yocto/github.com.containers.fuse-overlayfs" remote="base" path="layers/meta-virtualization-dl-3.4/git/github.com.containers.fuse-overlayfs.git" bare="True"/>
