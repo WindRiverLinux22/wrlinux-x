@@ -123,3 +123,4 @@
     <project name="external/yocto/github.com.storaged-project.blivet" remote="base" path="layers/meta-openembedded-dl-3.4/git/github.com.storaged-project.blivet.git" bare="True"/>
     <project name="external/yocto/github.com.storaged-project.blivet-gui" remote="base" path="layers/meta-openembedded-dl-3.4/git/github.com.storaged-project.blivet-gui.git" bare="True"/>
     <project name="external/yocto/github.com.google.googletest" remote="base" path="layers/meta-openembedded-dl-3.4/git/github.com.google.googletest.git" bare="True"/>
+    <project name="external/yocto/github.com.libbpf.libbpf" remote="base" path="layers/meta-openembedded-dl-3.4/git/github.com.libbpf.libbpf.git" bare="True"/>
