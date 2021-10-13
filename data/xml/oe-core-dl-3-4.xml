@@ -155,3 +155,4 @@
     <project name="external/yocto/git.eclipse.org.r.tcf.org.eclipse.tcf.agent" remote="base" path="layers/oe-core-dl-3.4/git/git.eclipse.org.r.tcf.org.eclipse.tcf.agent.git" bare="True"/>
     <project name="external/yocto/github.com.meta-rust.rust-hello-world" remote="base" path="layers/oe-core-dl-3.4/git/github.com.meta-rust.rust-hello-world.git" bare="True"/>
     <project name="external/yocto/github.com.rust-lang.rustfmt" remote="base" path="layers/oe-core-dl-3.4/git/github.com.rust-lang.rustfmt.git" bare="True"/>
+    <project name="external/yocto/github.com.lsof-org.lsof" remote="base" path="layers/oe-core-dl-3.4/git/github.com.lsof-org.lsof" bare="True"/>
