@@ -37,3 +37,4 @@
     <project name="external/yocto/github.com.containers.fuse-overlayfs" remote="base" path="layers/meta-virtualization-dl-3.4/git/github.com.containers.fuse-overlayfs.git" bare="True"/>
     <project name="external/yocto/github.com.containers.libpod" remote="base" path="layers/meta-virtualization-dl-3.4/git/github.com.containers.libpod.git" bare="True"/>
     <project name="external/yocto/github.com.lxc.lxc" remote="base" path="layers/meta-virtualization-dl-3.4/git/github.com.lxc.lxc.git" bare="True"/>
+    <project name="external/yocto/github.com.checkpoint-restore.criu" remote="base" path="layers/meta-virtualization-dl-3.4/git/github.com.checkpoint-restore.criu.git" bare="True"/>
