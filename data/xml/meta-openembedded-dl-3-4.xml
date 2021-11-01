@@ -126,3 +126,4 @@
     <project name="external/yocto/github.com.libbpf.libbpf" remote="base" path="layers/meta-openembedded-dl-3.4/git/github.com.libbpf.libbpf.git" bare="True"/>
     <project name="external/yocto/github.com.CanonicalLtd.netplan" remote="base" path="layers/meta-openembedded-dl-3.4/git/github.com.CanonicalLtd.netplan.git" bare="True"/>
     <project name="external/yocto/github.com.LMDB.lmdb" remote="base" path="layers/meta-openembedded-dl-3.4/git/github.com.LMDB.lmdb.git" bare="True"/>
+    <project name="external/yocto/git.libssh.org.projects.libssh" remote="base" path="layers/meta-openembedded-dl-3.4/git/git.libssh.org.projects.libssh.git" bare="True"/>
