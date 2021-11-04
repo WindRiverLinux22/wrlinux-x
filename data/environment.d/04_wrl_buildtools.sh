@@ -15,14 +15,12 @@
 
 # Download, install and load the buildtools tarball (as needed)
 
-# Buildtools location can change -- this is the path on top of the BASEURL
-BUILDTOOLS_REMOTE="${BUILDTOOLS_REMOTE:-buildtools-standalone-10.21.29a.1}"
+BUILDTOOLS_VERSION=${BUILDTOOLS_VERSION:-10.21.29a.1}
+BUILDTOOLS_EXT_VERSION=${BUILDTOOLS_EXT_VERSION:-10.21.44.0}
 
 # Special windshare folders to search
 BUILDTOOLS_FOLDERS="WRLinux-CD-Core"
 
-# Where to cache the git fetch
-BUILDTOOLS_GIT="${BUILDTOOLS_GIT:-bin/buildtools.git}"
 
 # Where to install the build tools
 BUILDTOOLS="${BUILDTOOLS:-bin/buildtools}"
@@ -31,6 +29,8 @@ BUILDTOOLS="${BUILDTOOLS:-bin/buildtools}"
 SDKARCH=${SDKARCH:-$(uname -m)}
 
 setup_add_arg --buildtools-branch BUILDTOOLSBRANCH keep
+
+setup_add_arg --buildtools-type BUILDTOOLS_TYPE keep
 
 setup_add_func buildtools_setup
 
@@ -42,6 +42,52 @@ buildtools_setup() {
 	if [ -z "${BUILDTOOLSBRANCH}" ]; then
 		BUILDTOOLSBRANCH="${BASEBRANCH}"
 	fi
+
+	# gcc 7.5.0 is the minimal version to build qemu-native
+        # see error info "You need at least GCC v7.5 or Clang v6.0 (or XCode Clang v10.0)"
+	gcc_cur_ver=$(gcc -dumpfullversion -dumpversion 2>/dev/null)
+	required_ver=7.5.0
+
+	# check whether host gcc version less than $required_ver
+	if [ ! "$(printf '%s\n' "$required_ver" "$gcc_cur_ver" | sort -V | head -n1)" = "$required_ver" ]; then
+		if [ basic = "${BUILDTOOLS_TYPE}" ]; then
+			echo -e "\nWarning: The version of host gcc is too low to support c++14 standard. It may cause some packages such as doxygen-native fail to build with basic buildtools.\n"
+		fi
+
+		if [ -z "${BUILDTOOLS_TYPE}" ]; then
+			BUILDTOOLS_TYPE=extended
+		fi
+	fi
+
+	# On the build server with older gcc, rerun setup may make
+	# buildtools different from the first run, check if gcc is
+	# provided by extended buildtools to fix the gap
+	if [ $(which gcc 2>&1 | grep "buildtools-extended-standalone") ] && [ -z "${BUILDTOOLS_TYPE}" ]; then
+		BUILDTOOLS_TYPE=extended
+	fi
+
+	if [ -z "${BUILDTOOLS_TYPE}" ]; then
+		BUILDTOOLS_TYPE=basic
+	fi
+
+	if [ basic != "${BUILDTOOLS_TYPE}" ] && [ extended != "${BUILDTOOLS_TYPE}" ]; then
+		echo "Wrong argument \"${BUILDTOOLS_TYPE}\" for option --buildtools-type. Supported arguments: basic, extended." >&2
+		return 1
+	fi
+
+	if [ basic = "${BUILDTOOLS_TYPE}" ]; then
+		buildtools=buildtools
+		buildtools_version=$BUILDTOOLS_VERSION
+	else
+		buildtools=buildtools-extended
+		buildtools_version=$BUILDTOOLS_EXT_VERSION
+	fi
+
+	# Buildtools location can change -- this is the path on top of the BASEURL
+	BUILDTOOLS_REMOTE="${BUILDTOOLS_REMOTE:-${buildtools}-standalone-${buildtools_version}}"
+
+	# Where to cache the git fetch
+	BUILDTOOLS_GIT="${BUILDTOOLS_GIT:-bin/${buildtools}.git}"
 
 	FETCH_BUILDTOOLS=0
 
@@ -164,16 +210,26 @@ buildtools_setup() {
 
 	if [ ${EXTRACT_BUILDTOOLS} -eq 1 ]; then
 		# Needs python.
-		buildtoolssdk=$(find "${BUILDTOOLS_GIT}" -name "${SDKARCH}-buildtools-nativesdk-standalone-*.sh" 2>/dev/null | sort | head -n1)
-		if [ -z "${buildtoolssdk}" ]; then
-			echo "Unable to find buildtools-nativesdk-standalone archive for ${SDKARCH}." >&2
-			echo >&2
-			echo "SDKARCH values found:" >&2
-			echo $(find "${BUILDTOOLS_GIT}" -name "*-buildtools-nativesdk-standalone-*.sh" | xargs -n 1 basename | cut -d '-' -f 1) >&2
-			echo >&2
-			echo "If one of these is compatible, set SDKARCH in your environment." >&2
-			echo >&2
-			return 1
+		buildtoolssdk=$(find "${BUILDTOOLS_GIT}" -name "${SDKARCH}-${buildtools}-nativesdk-standalone-*.sh" 2>/dev/null | sort | head -n1)
+		buildtoolssdk_list=$(find "${BUILDTOOLS_GIT}" -name "${SDKARCH}-${buildtools}-nativesdk-standalone-*.list" 2>/dev/null | sort | head -n1)
+		if [ -z "${buildtoolssdk_list}" ]; then
+			if [ -z "${buildtoolssdk}" ]; then
+				echo "Unable to find buildtools-nativesdk-standalone archive for ${SDKARCH}." >&2
+				echo >&2
+				echo "SDKARCH values found:" >&2
+				echo $(find "${BUILDTOOLS_GIT}" -name "*-${buildtools}-nativesdk-standalone-*.sh" | xargs -n 1 basename | cut -d '-' -f 1) >&2
+				echo >&2
+				echo "If one of these is compatible, set SDKARCH in your environment." >&2
+				echo >&2
+				return 1
+			fi
+		else
+			buildtoolssdk=${buildtoolssdk_list/%.list/.sh}
+			rm -f ${buildtoolssdk}
+			for part in $(cat ${buildtoolssdk_list}); do
+				cat ${BUILDTOOLS_GIT}/${part} >>${buildtoolssdk}
+			done
+			chmod +x ${buildtoolssdk}
 		fi
 
 		echo "Installing buildtools.."
@@ -190,10 +246,13 @@ buildtools_setup() {
 			return 1
 		fi
 		trap - INT
-		rm -f ${BUILDTOOLS}
-		ln -s $(basename ${BUILDTOOLS}).${BUILDTOOLS_REF} ${BUILDTOOLS}
 		echo "Done"
 	fi
+
+	# force to re-create the link that buildtools type may change
+	rm -f ${BUILDTOOLS}
+	ln -s $(basename ${BUILDTOOLS}).${BUILDTOOLS_REF} ${BUILDTOOLS}
+
 	unset FETCH_BUILDTOOLS EXTRACT_BUILDTOOLS
 
 	ENVIRON=$(find -L ${BUILDTOOLS} -name "environment-setup-${SDKARCH}-*-linux" | head -n1)
@@ -218,5 +277,12 @@ buildtools_export() {
 
 	export OE_BUILDTOOLS_BRANCH=${BUILDTOOLSBRANCH}
 	export OE_BUILDTOOLS_REMOTE=${BUILDTOOLS_REMOTE}
+	if [ basic = "${BUILDTOOLS_TYPE}" ]; then
+		export OE_ANOTHER_BUILDTOOLS_REMOTE=`echo ${BUILDTOOLS_REMOTE} | sed -e "s,buildtools-standalone-,buildtools-extended-standalone-," \
+			| sed -e "s,${BUILDTOOLS_VERSION},${BUILDTOOLS_EXT_VERSION},"`
+	else
+		export OE_ANOTHER_BUILDTOOLS_REMOTE=`echo ${BUILDTOOLS_REMOTE} | sed -e "s,buildtools-extended-standalone-,buildtools-standalone-," \
+			| sed -e "s,${BUILDTOOLS_EXT_VERSION},${BUILDTOOLS_VERSION},"`
+	fi
 	return 0
 }
