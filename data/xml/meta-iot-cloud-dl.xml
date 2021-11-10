@@ -1,11 +1,3 @@
-    <project name="external/yocto/github.com.Azure.azure-c-shared-utility" remote="base" path="layers/meta-iot-cloud-dl/git/github.com.Azure.azure-c-shared-utility.git" bare="True"/>
-    <project name="external/yocto/github.com.Azure.azure-macro-utils-c" remote="base" path="layers/meta-iot-cloud-dl/git/github.com.Azure.azure-macro-utils-c.git" bare="True"/>
-    <project name="external/yocto/github.com.Azure.azure-uhttp-c" remote="base" path="layers/meta-iot-cloud-dl/git/github.com.Azure.azure-uhttp-c.git" bare="True"/>
-    <project name="external/yocto/github.com.kgabis.parson" remote="base" path="layers/meta-iot-cloud-dl/git/github.com.kgabis.parson.git" bare="True"/>
-    <project name="external/yocto/github.com.Azure.azure-iot-sdk-c" remote="base" path="layers/meta-iot-cloud-dl/git/github.com.Azure.azure-iot-sdk-c.git" bare="True"/>
-    <project name="external/yocto/github.com.Azure.azure-uamqp-c" remote="base" path="layers/meta-iot-cloud-dl/git/github.com.Azure.azure-uamqp-c.git" bare="True"/>
-    <project name="external/yocto/github.com.Azure.umock-c" remote="base" path="layers/meta-iot-cloud-dl/git/github.com.Azure.umock-c.git" bare="True"/>
-    <project name="external/yocto/github.com.Azure.azure-umqtt-c" remote="base" path="layers/meta-iot-cloud-dl/git/github.com.Azure.azure-umqtt-c.git" bare="True"/>
     <project name="external/yocto/github.com.awslabs.aws-c-event-stream" remote="base" path="layers/meta-iot-cloud-dl/git/github.com.awslabs.aws-c-event-stream.git" bare="True"/>
     <project name="external/yocto/github.com.awslabs.aws-c-common" remote="base" path="layers/meta-iot-cloud-dl/git/github.com.awslabs.aws-c-common.git" bare="True"/>
     <project name="external/yocto/github.com.awslabs.aws-c-s3" remote="base" path="layers/meta-iot-cloud-dl/git/github.com.awslabs.aws-c-s3.git" bare="True"/>
