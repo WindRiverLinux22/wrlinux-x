@@ -159,3 +159,4 @@
     <project name="external/yocto/gitlab.freedesktop.org.mesa.waffle" remote="base" path="layers/oe-core-dl-3.4/git/gitlab.freedesktop.org.mesa.waffle.git" bare="True"/>
     <project name="external/yocto/github.com.cracklib.cracklib" remote="base" path="layers/oe-core-dl-3.4/git/github.com.cracklib.cracklib" bare="True"/>
     <project name="external/yocto/github.com.ColinIanKing.stress-ng" remote="base" path="layers/oe-core-dl-3.4/git/github.com.ColinIanKing.stress-ng.git" bare="True"/>
+    <project name="external/yocto/gitlab.freedesktop.org.xorg.lib.libxcvt" remote="base" path="layers/oe-core-dl-3.4/git/gitlab.freedesktop.org.xorg.lib.libxcvt.git" bare="True"/>
