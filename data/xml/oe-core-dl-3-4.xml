@@ -160,3 +160,4 @@
     <project name="external/yocto/github.com.ColinIanKing.stress-ng" remote="base" path="layers/oe-core-dl-3.4/git/github.com.ColinIanKing.stress-ng.git" bare="True"/>
     <project name="external/yocto/gitlab.freedesktop.org.xorg.lib.libxcvt" remote="base" path="layers/oe-core-dl-3.4/git/gitlab.freedesktop.org.xorg.lib.libxcvt.git" bare="True"/>
     <project name="external/yocto/gerrit.googlesource.com.git-repo" remote="base" path="layers/oe-core-dl-3.4/git/gerrit.googlesource.com.git-repo.git" bare="True"/>
+    <project name="external/yocto/go.googlesource.com.example" remote="base" path="layers/oe-core-dl-3.4/git/go.googlesource.com.example" bare="True"/>
