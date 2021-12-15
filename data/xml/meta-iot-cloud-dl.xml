@@ -20,3 +20,4 @@
     <project name="external/yocto/github.com.Azure.azure-iot-sdk-c" remote="base" path="layers/meta-iot-cloud-dl/git/github.com.Azure.azure-iot-sdk-c.git" bare="True"/>
     <project name="external/yocto/github.com.Azure.azure-uamqp-c" remote="base" path="layers/meta-iot-cloud-dl/git/github.com.Azure.azure-uamqp-c.git" bare="True"/>
     <project name="external/yocto/github.com.Azure.azure-umqtt-c" remote="base" path="layers/meta-iot-cloud-dl/git/github.com.Azure.azure-umqtt-c.git" bare="True"/>
+    <project name="external/yocto/github.com.kgabis.parson" remote="base" path="layers/meta-iot-cloud-dl/git/github.com.kgabis.parson.git" bare="True"/>
