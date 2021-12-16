@@ -1,1 +1,0 @@
-    <project name="external/poky" remote="base" path="layers/meta-lat-dl-3.4/git/git.yoctoproject.org.poky" bare="True"/>
