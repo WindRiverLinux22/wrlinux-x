@@ -73,7 +73,7 @@ eula_askuser() {
 		echo "EULA_VERSION=\"$(tail -n 1 ${BASEDIR}/EULA)\""
 		echo "EULA_SHA=\"$(shasum ${BASEDIR}/EULA | cut -d ' ' -f 1)\""
 		echo
-	} >> config/eula_accepted
+	} > config/eula_accepted
 }
 
 eula_setup() {
