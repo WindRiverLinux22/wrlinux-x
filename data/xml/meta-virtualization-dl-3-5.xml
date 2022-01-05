@@ -22,7 +22,6 @@
     <project name="external/yocto/github.com.containernetworking.cni" remote="base" path="layers/meta-virtualization-dl-3.5/git/github.com.containernetworking.cni.git" bare="True"/>
     <project name="external/yocto/github.com.containernetworking.plugins" remote="base" path="layers/meta-virtualization-dl-3.5/git/github.com.containernetworking.plugins.git" bare="True"/>
     <project name="external/yocto/github.com.libvmi.libvmi" remote="base" path="layers/meta-virtualization-dl-3.5/git/github.com.libvmi.libvmi.git" bare="True"/>
-    <project name="external/yocto/github.com.docker.docker-ce" remote="base" path="layers/meta-virtualization-dl-3.5/git/github.com.docker.docker-ce.git" bare="True"/>
     <project name="external/yocto/github.com.creack.pty" remote="base" path="layers/meta-virtualization-dl-3.5/git/github.com.creack.pty.git" bare="True"/>
     <project name="external/yocto/github.com.kubernetes.release" remote="base" path="layers/meta-virtualization-dl-3.5/git/github.com.kubernetes.release" bare="True"/>
     <project name="external/yocto/github.com.jirutka.sloci-image" remote="base" path="layers/meta-virtualization-dl-3.5/git/github.com.jirutka.sloci-image.git" bare="True"/>
@@ -35,7 +34,6 @@
     <project name="external/yocto/github.com.alecthomas.gometalinter" remote="base" path="layers/meta-virtualization-dl-3.5/git/github.com.alecthomas.gometalinter.git" bare="True"/>
     <project name="external/yocto/github.com.containers.podman" remote="base" path="layers/meta-virtualization-dl-3.5/git/github.com.containers.podman.git" bare="True"/>
     <project name="external/yocto/github.com.containers.fuse-overlayfs" remote="base" path="layers/meta-virtualization-dl-3.5/git/github.com.containers.fuse-overlayfs.git" bare="True"/>
-    <project name="external/yocto/github.com.containers.libpod" remote="base" path="layers/meta-virtualization-dl-3.5/git/github.com.containers.libpod.git" bare="True"/>
     <project name="external/yocto/github.com.lxc.lxc" remote="base" path="layers/meta-virtualization-dl-3.5/git/github.com.lxc.lxc.git" bare="True"/>
     <project name="external/yocto/github.com.checkpoint-restore.criu" remote="base" path="layers/meta-virtualization-dl-3.5/git/github.com.checkpoint-restore.criu.git" bare="True"/>
     <project name="external/yocto/github.com.docker.docker" remote="base" path="layers/meta-virtualization-dl-3.5/git/github.com.docker.docker.git" bare="True"/>
