@@ -270,8 +270,7 @@ class Setup():
                 id = ""
                 version_id = ""
                 with open("/etc/os-release", 'r') as f:
-                    lines=f.readlines()
-                    for line in lines:
+                    for line in f.readlines():
                         if line.startswith('ID='):
                             id = line.split('=')[1].strip()
                         elif line.startswith('VERSION_ID='):
@@ -283,19 +282,17 @@ class Setup():
                 if id == '"centos"' and version_id == '"7"':
                     is_centos7=True
 
-                if not is_centos7:
-                    return
+                if is_centos7:
+                    import glob
+                    is_devtoolset_installed=False
+                    devtoolsets = glob.glob("/opt/rh/devtoolset-*")
+                    for devtoolset in devtoolsets:
+                        if re.match(r"/opt/rh/devtoolset-(7|8|9|10)$", devtoolset):
+                            is_devtoolset_installed=True
 
-                import glob
-                is_devtoolset_installed=False
-                devtoolsets = glob.glob("/opt/rh/devtoolset-*")
-                for devtoolset in devtoolsets:
-                    if re.match(r"/opt/rh/devtoolset-(7|8|9|10)$", devtoolset):
-                        is_devtoolset_installed=True
-
-                if is_centos7 and not is_devtoolset_installed:
-                    logger.error("The libstdc++ version is too low, please install devtoolset-[7+]-gcc-c++, see https://centos.pkgs.org/7/centos-sclo-rh-x86_64/") 
-                    sys.exit(1)
+                    if not is_devtoolset_installed:
+                        logger.error("The libstdc++ version is too low, please install devtoolset-[7+]-gcc-c++, see https://centos.pkgs.org/7/centos-sclo-rh-x86_64/")
+                        sys.exit(1)
 
             logger.plain('Setting templates to "%s"' % (",".join(self.wrtemplates)))
 
