@@ -8,7 +8,6 @@
     <project name="external/yocto/github.com.open-iscsi.open-iscsi" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.open-iscsi.open-iscsi" bare="True"/>
     <project name="external/yocto/github.com.open-iscsi.open-isns" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.open-iscsi.open-isns" bare="True"/>
     <project name="external/yocto/github.com.dugsong.libdnet" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.dugsong.libdnet.git" bare="True"/>
-    <project name="external/yocto/git.kernel.org.pub.scm.linux.kernel.git.shemminger.bridge-utils" remote="base" path="layers/meta-openembedded-dl-3.5/git/git.kernel.org.pub.scm.linux.kernel.git.shemminger.bridge-utils.git" bare="True"/>
     <project name="external/yocto/github.com.sctp.lksctp-tools" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.sctp.lksctp-tools.git" bare="True"/>
     <project name="external/yocto/github.com.maxmind.geoip-api-perl" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.maxmind.geoip-api-perl.git" bare="True"/>
     <project name="external/ovp/anongit.freedesktop.org.spice.spice-protocol" remote="base" path="layers/meta-openembedded-dl-3.5/git/anongit.freedesktop.org.spice.spice-protocol" bare="True"/>
@@ -73,7 +72,6 @@
     <project name="external/yocto/github.com.uclouvain.openjpeg" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.uclouvain.openjpeg.git" bare="True"/>
     <project name="external/yocto/sourceware.org.git.lvm2" remote="base" path="layers/meta-openembedded-dl-3.5/git/sourceware.org.git.lvm2.git" bare="True"/>
     <project name="external/yocto/github.com.vmware.open-vm-tools" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.vmware.open-vm-tools.git" bare="True"/>
-    <project name="external/yocto/repo.or.cz.iotop" remote="base" path="layers/meta-openembedded-dl-3.5/git/repo.or.cz.iotop.git" bare="True"/>
     <project name="external/yocto/github.com.c-ares.c-ares" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.c-ares.c-ares.git" bare="True"/>
     <project name="external/yocto/github.com.opencv.ade" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.opencv.ade.git" bare="True"/>
     <project name="external/yocto/github.com.google.glog" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.google.glog.git" bare="True"/>
