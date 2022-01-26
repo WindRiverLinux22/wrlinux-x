@@ -74,10 +74,7 @@ Then re-run the setup program with the original arguments.
 
 $ wrlinux-x/setup.sh ####SETUP_ARGS####
 
-The sync command will simply update your project, on the current branch, to
-the latest version.
-
-If you use the setup program you can change the branch, and/or project
+When you use the setup program you can change the branch, and/or project
 configuration.  Note, the build directory is not updated -- you will have
 to update this to the new configuration manually, or start a new build
 directory.
