@@ -18,7 +18,6 @@
     <project name="external/yocto/git.yoctoproject.org.matchbox-sato" remote="base" path="layers/oe-core-dl-3.5/git/git.yoctoproject.org.matchbox-sato" bare="True"/>
     <project name="external/yocto/git.yoctoproject.org.matchbox-terminal" remote="base" path="layers/oe-core-dl-3.5/git/git.yoctoproject.org.matchbox-terminal" bare="True"/>
     <project name="external/yocto/git.yoctoproject.org.matchbox-window-manager" remote="base" path="layers/oe-core-dl-3.5/git/git.yoctoproject.org.matchbox-window-manager" bare="True"/>
-    <project name="external/yocto/git.yoctoproject.org.prelink-cross" remote="base" path="layers/oe-core-dl-3.5/git/git.yoctoproject.org.prelink-cross.git" bare="True"/>
     <project name="external/yocto/git.yoctoproject.org.psplash" remote="base" path="layers/oe-core-dl-3.5/git/git.yoctoproject.org.psplash" bare="True"/>
     <project name="external/yocto/git.yoctoproject.org.ptest-runner2" remote="base" path="layers/oe-core-dl-3.5/git/git.yoctoproject.org.ptest-runner2" bare="True"/>
     <project name="external/yocto/git.yoctoproject.org.screenshot" remote="base" path="layers/oe-core-dl-3.5/git/git.yoctoproject.org.screenshot" bare="True"/>
