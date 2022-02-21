@@ -159,3 +159,4 @@
     <project name="external/yocto/gerrit.googlesource.com.git-repo" remote="base" path="layers/oe-core-dl-3.5/git/gerrit.googlesource.com.git-repo.git" bare="True"/>
     <project name="external/yocto/go.googlesource.com.example" remote="base" path="layers/oe-core-dl-3.5/git/go.googlesource.com.example" bare="True"/>
     <project name="external/yocto/salsa.debian.org.debian.debianutils" remote="base" path="layers/oe-core-dl-3.5/git/salsa.debian.org.debian.debianutils.git" bare="True"/>
+    <project name="external/yocto/github.com.KhronosGroup.OpenCL-Headers" remote="base" path="layers/oe-core-dl-3.5/git/github.com.KhronosGroup.OpenCL-Headers.git" bare="True"/>
