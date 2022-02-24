@@ -85,6 +85,8 @@ wr_repo_setup() {
 				echo "Retrying $1 after $duration seconds -- $retries time(s) (max: 5)"
 				sleep $duration
 				duration=$(($duration+$(random 1 5)))
+                        else
+                            break
 			fi
 		done
 
@@ -118,6 +120,8 @@ wr_repo_setup() {
 				echo "Retrying $1 after $duration seconds -- $retries time(s) (max: 5)"
 				sleep $duration
 				duration=$(($duration+$(random 1 5)))
+                        else
+                            break
 			fi
 		done
 
@@ -145,6 +149,8 @@ wr_repo_setup() {
 				echo "Retrying $1 after $duration seconds -- $retries time(s) (max: 5)"
 				sleep $duration
 				duration=$(($duration+$(random 1 5)))
+                        else
+                            break
 			fi
 		done
 
