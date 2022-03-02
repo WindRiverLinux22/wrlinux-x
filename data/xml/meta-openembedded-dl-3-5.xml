@@ -127,7 +127,6 @@
     <project name="external/overc/github.com.mendsley.bsdiff" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.mendsley.bsdiff" bare="True"/>
     <project name="external/yocto/github.com.inotify-tools.inotify-tools" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.inotify-tools.inotify-tools" bare="True"/>
     <project name="external/yocto/github.com.bluesabre.menulibre" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.bluesabre.menulibre.git" bare="True"/>
-    <project name="external/yocto/github.com.libbpf.libbpf" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.libbpf.libbpf.git" bare="True"/>
     <project name="external/yocto/git.kernel.org.pub.scm.network.bridge.bridge-utils" remote="base" path="layers/meta-openembedded-dl-3.5/git/git.kernel.org.pub.scm.network.bridge.bridge-utils.git" bare="True"/>
     <project name="external/yocto/gitlab.freedesktop.org.spice.spice-protocol" remote="base" path="layers/meta-openembedded-dl-3.5/git/gitlab.freedesktop.org.spice.spice-protocol.git" bare="True"/>
     <project name="external/yocto/github.com.npat-efault.picocom" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.npat-efault.picocom" bare="True"/>
