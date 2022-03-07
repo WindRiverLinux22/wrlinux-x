@@ -90,7 +90,6 @@
     <project name="external/yocto/github.com.berkerpeksag.astor" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.berkerpeksag.astor.git" bare="True"/>
     <project name="external/yocto/github.com.keras-team.keras-applications" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.keras-team.keras-applications.git" bare="True"/>
     <project name="external/yocto/github.com.python-pillow.Pillow" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.python-pillow.Pillow.git" bare="True"/>
-    <project name="external/yocto/github.com.cf-natali.ntplib" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.cf-natali.ntplib.git" bare="True"/>
     <project name="external/yocto/github.com.rhinstaller.pykickstart" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.rhinstaller.pykickstart.git" bare="True"/>
     <project name="external/yocto/github.com.schnitzeltony.xfce4-closebutton-plugin" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.schnitzeltony.xfce4-closebutton-plugin.git" bare="True"/>
     <project name="external/yocto/github.com.ncopa.xfce-polkit" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.ncopa.xfce-polkit.git" bare="True"/>
@@ -115,7 +114,6 @@
     <project name="external/yocto/github.com.CESNET.libyang" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.CESNET.libyang.git" bare="True"/>
     <project name="external/yocto/github.com.jemalloc.jemalloc" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.jemalloc.jemalloc.git" bare="True"/>
     <project name="external/yocto/git.cryptomilk.org.projects.cmocka" remote="base" path="layers/meta-openembedded-dl-3.5/git/git.cryptomilk.org.projects.cmocka.git" bare="True" />
-    <project name="external/yocto/github.com.storaged-project.blivet" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.storaged-project.blivet.git" bare="True"/>
     <project name="external/yocto/github.com.storaged-project.blivet-gui" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.storaged-project.blivet-gui.git" bare="True"/>
     <project name="external/yocto/github.com.google.googletest" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.google.googletest.git" bare="True"/>
     <project name="external/yocto/github.com.CanonicalLtd.netplan" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.CanonicalLtd.netplan.git" bare="True"/>
