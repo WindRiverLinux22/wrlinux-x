@@ -76,7 +76,6 @@
     <project name="external/yocto/anongit.freedesktop.org.virglrenderer" remote="base" path="layers/oe-core-dl-3.5/git/anongit.freedesktop.org.virglrenderer" bare="True"/>
     <project name="external/yocto/github.com.vim.vim" remote="base" path="layers/oe-core-dl-3.5/git/github.com.vim.vim.git" bare="True"/>
     <project name="external/yocto/gitlab.freedesktop.org.gstreamer.gst-examples" remote="base" path="layers/oe-core-dl-3.5/git/gitlab.freedesktop.org.gstreamer.gst-examples.git" bare="True"/>
-    <project name="external/yocto/github.com.asciidoc.asciidoc-py3" remote="base" path="layers/oe-core-dl-3.5/git/github.com.asciidoc.asciidoc-py3" bare="True"/>
     <project name="external/yocto/github.com.systemd.systemd-stable" remote="base" path="layers/oe-core-dl-3.5/git/github.com.systemd.systemd-stable.git" bare="True"/>
     <project name="external/yocto/github.com.troglobit.sysklogd" remote="base" path="layers/oe-core-dl-3.5/git/github.com.troglobit.sysklogd.git" bare="True"/>
     <project name="external/yocto/gitlab.freedesktop.org.mesa.piglit" remote="base" path="layers/oe-core-dl-3.5/git/gitlab.freedesktop.org.mesa.piglit.git" bare="True"/>
@@ -92,8 +91,6 @@
     <project name="external/yocto/github.com.pyca.cryptography" remote="base" path="layers/oe-core-dl-3.5/git/github.com.pyca.cryptography.git" bare="True"/>
     <project name="external/yocto/boringssl.googlesource.com.boringssl" remote="base" path="layers/oe-core-dl-3.5/git/boringssl.googlesource.com.boringssl" bare="True"/>
     <project name="external/yocto/github.com.kkos.oniguruma" remote="base" path="layers/oe-core-dl-3.5/git/github.com.kkos.oniguruma.git" bare="True"/>
-    <project name="external/yocto/github.com.hillbig.esaxx" remote="base" path="layers/oe-core-dl-3.5/git/github.com.hillbig.esaxx.git" bare="True"/>
-    <project name="external/yocto/github.com.y-256.libdivsufsort" remote="base" path="layers/oe-core-dl-3.5/git/github.com.y-256.libdivsufsort.git" bare="True"/>
     <project name="external/yocto/github.com.linux-can.can-utils" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.linux-can.can-utils.git" bare="True"/>
     <project name="external/yocto/git.pengutronix.de.git.tools.libsocketcan" remote="base" path="layers/meta-openembedded-dl-3.5/git/git.pengutronix.de.git.tools.libsocketcan.git" bare="True"/>
     <project name="external/yocto/github.com.lathiat.nss-mdns" remote="base" path="layers/oe-core-dl-3.5/git/github.com.lathiat.nss-mdns" bare="True"/>
