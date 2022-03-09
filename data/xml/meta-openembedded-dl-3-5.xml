@@ -130,3 +130,4 @@
     <project name="external/yocto/github.com.npat-efault.picocom" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.npat-efault.picocom" bare="True"/>
     <project name="external/yocto/github.com.USCiLab.cereal" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.USCiLab.cereal.git" bare="True"/>
     <project name="external/yocto/github.com.tianon.gosu" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.tianon.gosu.git" bare="True"/>
+    <project name="external/yocto/github.com.opencontainers.runc" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.opencontainers.runc" bare="True"/>
