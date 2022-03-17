@@ -132,3 +132,4 @@
     <project name="external/yocto/github.com.tianon.gosu" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.tianon.gosu.git" bare="True"/>
     <project name="external/yocto/github.com.opencontainers.runc" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.opencontainers.runc" bare="True"/>
     <project name="external/yocto/git.zx2c4.com.wireguard-tools" remote="base" path="layers/meta-openembedded-dl-3.5/git/git.zx2c4.com.wireguard-tools" bare="True"/>
+    <project name="external/yocto/github.com.GENIVI.dlt-daemon" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.GENIVI.dlt-daemon.git" bare="True"/>
