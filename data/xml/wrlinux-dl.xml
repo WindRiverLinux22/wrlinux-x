@@ -1,3 +1,4 @@
     <project name="external/yocto/github.com.WindRiver-OpenSourceLabs.anspass" remote="base" path="layers/wrlinux-dl/git/github.com.WindRiver-OpenSourceLabs.anspass" bare="True"/>
     <project name="external/yocto/github.com.openSUSE.build-compare" remote="base" path="layers/wrlinux-dl/git/github.com.openSUSE.build-compare.git" bare="True"/>
     <project name="external/extra/github.com.xontab.chrome-virtual-keyboard" remote="base" path="layers/wrlinux-dl/git/github.com.xontab.chrome-virtual-keyboard.git" bare="True"/>
+    <project name="external/yocto/github.com.GENIVI.vsomeip" remote="base" path="layers/wrlinux-dl/git/github.com.GENIVI.vsomeip.git" bare="True"/>
