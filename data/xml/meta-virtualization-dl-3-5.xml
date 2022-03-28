@@ -37,3 +37,4 @@
     <project name="external/yocto/github.com.checkpoint-restore.criu" remote="base" path="layers/meta-virtualization-dl-3.5/git/github.com.checkpoint-restore.criu.git" bare="True"/>
     <project name="external/yocto/github.com.docker.docker" remote="base" path="layers/meta-virtualization-dl-3.5/git/github.com.docker.docker.git" bare="True"/>
     <project name="external/yocto/github.com.docker.cli" remote="base" path="layers/meta-virtualization-dl-3.5/git/github.com.docker.cli" bare="True"/>
+    <project name="external/yocto/github.com.opencontainers.runc" remote="base" path="layers/meta-virtualization-dl-3.5/git/github.com.opencontainers.runc" bare="True"/>
