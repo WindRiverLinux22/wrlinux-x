@@ -135,3 +135,4 @@
     <project name="external/yocto/github.com.libbpf.libbpf" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.libbpf.libbpf.git" bare="True"/>
     <project name="external/yocto/github.com.fmtlib.fmt" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.fmtlib.fmt" bare="True"/>
     <project name="external/yocto/github.com.ndevilla.iniparser" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.ndevilla.iniparser.git" bare="True"/>
+    <project name="external/yocto/github.com.wxWidgets.wxWidgets" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.wxWidgets.wxWidgets.git" bare="True"/>
