@@ -136,3 +136,9 @@
     <project name="external/yocto/github.com.fmtlib.fmt" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.fmtlib.fmt" bare="True"/>
     <project name="external/yocto/github.com.ndevilla.iniparser" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.ndevilla.iniparser.git" bare="True"/>
     <project name="external/yocto/github.com.wxWidgets.wxWidgets" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.wxWidgets.wxWidgets.git" bare="True"/>
+    <project name="external/yocto/github.com.wxWidgets.Catch" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.wxWidgets.Catch.git" bare="True"/>
+    <project name="external/yocto/github.com.wxWidgets.libexpat" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.wxWidgets.libexpat.git" bare="True"/>
+    <project name="external/yocto/github.com.wxWidgets.libjpeg-turbo.git" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.wxWidgets.libjpeg-turbo.git" bare="True"/>
+    <project name="external/yocto/github.com.wxWidgets.libpng" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.wxWidgets.libpng.git" bare="True"/>
+    <project name="external/yocto/github.com.wxWidgets.libtiff" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.wxWidgets.libtiff.git" bare="True"/>
+    <project name="external/yocto/github.com.wxWidgets.zlib.git" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.wxWidgets.zlib.git.git" bare="True"/>
