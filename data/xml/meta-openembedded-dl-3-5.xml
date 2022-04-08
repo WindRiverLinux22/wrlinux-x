@@ -141,3 +141,4 @@
     <project name="external/yocto/github.com.wxWidgets.libpng" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.wxWidgets.libpng.git" bare="True"/>
     <project name="external/yocto/github.com.wxWidgets.libtiff" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.wxWidgets.libtiff.git" bare="True"/>
     <project name="external/yocto/github.com.wxWidgets.zlib" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.wxWidgets.zlib.git" bare="True"/>
+    <project name="external/yocto/github.com.sass.libsass" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.sass.libsass.git" bare="True"/>
