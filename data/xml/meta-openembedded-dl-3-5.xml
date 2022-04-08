@@ -143,3 +143,4 @@
     <project name="external/yocto/github.com.wxWidgets.zlib" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.wxWidgets.zlib.git" bare="True"/>
     <project name="external/yocto/github.com.sass.libsass" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.sass.libsass.git" bare="True"/>
     <project name="external/yocto/github.com.sass.sassc" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.sass.sassc.git" bare="True"/>
+    <project name="external/yocto/github.com.opensvc.multipath-tools" remote="base" path="layers/meta-openembedded-dl-3.5/git/github.com.opensvc.multipath-tools.git" bare="True"/>
