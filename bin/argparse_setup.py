@@ -206,6 +206,10 @@ class Argparse_Setup:
             if self.setup:
                 self.setup.mirror = parsed_args.mirror
 
+        if parsed_args.mirror_as_premirrors:
+            if self.setup:
+                self.setup.mirror_as_premirrors = parsed_args.mirror_as_premirrors
+
         if parsed_args.use_layer_groups:
             if self.setup:
                 self.setup.use_layer_groups = parsed_args.use_layer_groups
@@ -231,6 +235,7 @@ class Argparse_Setup:
         self.base_args.add_argument('--base-branch', metavar="BRANCH", help='Base branch identifier %s' % (setup_base_branch))
 
         self.parser.add_argument('--mirror', help='Do not construct a project, instead construct a mirror of the repositories that would have been used to construct a project (requires a Layer Selection argument)', action='store_true')
+        self.parser.add_argument('-mp', '--mirror-as-premirrors', help="Make the dl layers as premirrors when --mirror is specified. Use the project mirror as PREMIRRORS during the build when --mirror is not specified", action='store_true', default=False)
 
         self.parser.add_argument('--no-prime', help='Control whether to download common objects before repo sync. Default: True', action="store_true")
 
