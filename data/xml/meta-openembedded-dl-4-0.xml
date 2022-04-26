@@ -143,5 +143,4 @@
     <project name="external/yocto/github.com.sass.libsass" remote="base" path="layers/meta-openembedded-dl-4.0/git/github.com.sass.libsass.git" bare="True"/>
     <project name="external/yocto/github.com.sass.sassc" remote="base" path="layers/meta-openembedded-dl-4.0/git/github.com.sass.sassc.git" bare="True"/>
     <project name="external/yocto/github.com.opensvc.multipath-tools" remote="base" path="layers/meta-openembedded-dl-4.0/git/github.com.opensvc.multipath-tools.git" bare="True"/>
-    <project name="external/yocto/github.com.opencontainers.runc" remote="base" path="layers/meta-virtualization-dl-4.0/git/github.com.opencontainers.runc" bare="True"/>
     <project name="external/yocto/git.savannah.gnu.org.git.gnulib" remote="base" path="layers/meta-openembedded-dl-4.0/git/git.savannah.gnu.org.git.gnulib.git" bare="True"/>
