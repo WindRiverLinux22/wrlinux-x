@@ -1,3 +1,0 @@
-    <project name="external/poky" remote="base" path="layers/meta-lat-dl-3.5/git/git.yoctoproject.org.poky" bare="True"/>
-    <project name="external/yocto/github.com.FullMetalUpdate.ostree-push" remote="base" path="layers/meta-lat-dl-3.5/git/github.com.FullMetalUpdate.ostree-push.git" bare="True"/>
-    <project name="external/yocto/github.com.FullMetalUpdate.fullmetalupdate" remote="base" path="layers/meta-lat-dl-3.5/git/github.com.FullMetalUpdate.fullmetalupdate.git" bare="True"/>
