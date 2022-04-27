@@ -34,7 +34,7 @@ askpass_setup() {
 		return 0
 	fi
 
-    if [ "${WINDSHARE_SCHEME:0:7}" = "http://" ] || [ "${WINDSHARE_SCHEME:0:8}" = "https://" ]; then
+    if [ "$WINDSHARE_SCHEME" = "http" ] || [ "$WINDSHARE_SCHEME" = "https" ]; then
         if [ -n "$GIT_ASKPASS" ]; then
             echo "INFO: Detected GIT_ASKPASS configuration. Disabling built-in askpass functionality."
             return 0
