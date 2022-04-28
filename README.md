@@ -33,7 +33,7 @@ _The Wind River Linux Platform Development Quick Start_.
 
 When following the quick start and other examples, use:
 
-    branchName: WRLINUX_10_21_BASE
+    branchName: WRLINUX_10_22_BASE
     repoURL: git://<git mirror>/git/wrlinux-x
 
 
