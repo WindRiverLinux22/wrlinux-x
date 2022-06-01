@@ -146,3 +146,4 @@
     <project name="external/yocto/git.savannah.gnu.org.git.gnulib" remote="base" path="layers/meta-openembedded-dl-4.0/git/git.savannah.gnu.org.git.gnulib.git" bare="True"/>
     <project name="external/yocto/github.com.fujita.tgt" remote="base" path="layers/meta-cloud-services-dl-4.0/git/github.com.fujita.tgt.git" bare="True"/>
     <project name="external/yocto/github.com.FRRouting.frr" remote="base" path="layers/meta-openembedded-dl-4.0/git/github.com.FRRouting.frr.git" bare="True"/>
+    <project name="external/yocto/github.com.DaveGamble.cJSON" remote="base" path="layers/meta-openembedded-dl-4.0/git/github.com.DaveGamble.cJSON.git" bare="True"/>
