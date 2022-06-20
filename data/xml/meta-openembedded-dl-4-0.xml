@@ -148,3 +148,4 @@
     <project name="external/yocto/github.com.FRRouting.frr" remote="base" path="layers/meta-openembedded-dl-4.0/git/github.com.FRRouting.frr.git" bare="True"/>
     <project name="external/yocto/github.com.DaveGamble.cJSON" remote="base" path="layers/meta-openembedded-dl-4.0/git/github.com.DaveGamble.cJSON.git" bare="True"/>
     <project name="external/yocto/github.com.denix0.devmem2" remote="base" path="layers/meta-openembedded-dl-4.0/git/github.com.denix0.devmem2.git" bare="True"/>
+    <project name="external/yocto/github.com.flatpak.libportal" remote="base" path="layers/meta-openembedded-dl-4.0/git/github.com.flatpak.libportal.git" bare="True"/>
