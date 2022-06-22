@@ -157,3 +157,4 @@
     <project name="external/yocto/salsa.debian.org.debian.debianutils" remote="base" path="layers/oe-core-dl-4.0/git/salsa.debian.org.debian.debianutils.git" bare="True"/>
     <project name="external/yocto/github.com.KhronosGroup.OpenCL-Headers" remote="base" path="layers/oe-core-dl-4.0/git/github.com.KhronosGroup.OpenCL-Headers.git" bare="True"/>
     <project name="external/yocto/github.com.asciidoc.asciidoc-py" remote="base" path="layers/oe-core-dl-4.0/git/github.com.asciidoc.asciidoc-py" bare="True"/>
+    <project name="external/yocto/source.denx.de.u-boot.u-boot" remote="base" path="layers/oe-core-dl-4.0/git/source.denx.de.u-boot.u-boot.git" bare="True"/>
