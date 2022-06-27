@@ -1,0 +1,3 @@
+    <project name="external/yocto/github.com.FullMetalUpdate.ostree-push" remote="base" path="layers/wr-ota-dl/git/github.com.FullMetalUpdate.ostree-push.git" bare="True"/>
+    <project name="external/yocto/github.com.FullMetalUpdate.fullmetalupdate" remote="base" path="layers/wr-ota-dl/git/github.com.FullMetalUpdate.fullmetalupdate.git" bare="True"/>
+
