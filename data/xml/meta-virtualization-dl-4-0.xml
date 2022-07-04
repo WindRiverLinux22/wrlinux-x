@@ -180,3 +180,4 @@
     <project name="external/yocto/github.com.jaytaylor.go-hostsfile" remote="base" path="layers/meta-virtualization-dl-4.0/git/github.com.jaytaylor.go-hostsfile" bare="True"/>
     <project name="external/yocto/github.com.flannel-io.cni-plugin" remote="base" path="layers/meta-virtualization-dl-4.0/git/github.com.flannel-io.cni-plugin" bare="True"/>
     <project name="external/yocto/github.com.opencontainers.runc" remote="base" path="layers/meta-virtualization-dl-4.0/git/github.com.opencontainers.runc" bare="True"/>
+    <project name="external/yocto/github.com.moby.moby" remote="base" path="layers/meta-virtualization-dl-4.0/git/github.com.moby.moby.git" bare="True"/>
