@@ -1230,6 +1230,14 @@ class Setup():
                 for path in paths:
                     logger.warning(path)
 
+        # Check blank line
+        lineno = 1
+        with open(os.path.join(self.project_dir, self.default_xml)) as f:
+            for line in f.readlines():
+                if not line.strip():
+                    logger.warning('Found blank line in %s: line %s' % (self.default_xml, lineno))
+                lineno += 1
+
         logger.debug('Done')
 
     def get_git_premirrors_from_mirror_index(self, url, protocol):
