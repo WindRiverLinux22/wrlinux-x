@@ -96,7 +96,7 @@ class Setup():
         self.wrtemplates = []
 
         self.all_layers = False
-        self.dl_layers = False
+        self.dl_layers = -1
         self.local_layers = []
         self.remote_layers = []
 
@@ -315,6 +315,9 @@ class Setup():
             # We only want to do this if we're not mirroring...
             self.update_project()
         else:
+            if self.dl_layers not in (0, -1):
+                logger.warning("clone-depth is ignored since --mirror is used")
+
             # Setup an index for others to use if we're mirroring...
             self.update_mirror()
             self.update_mirror_index()
@@ -724,7 +727,7 @@ class Setup():
                 continue
 
             if not checkCache(lindex, layerBranch, True):
-                if self.dl_layers != True:
+                if self.dl_layers == -1:
                     layers = self.index.find_layer(lindex, id=layerBranch['layer'])
                     if layers and ('-dl-' in layers[0]['name'] or layers[0]['name'].endswith('-dl')):
                         # Skip the download layer
@@ -809,7 +812,7 @@ class Setup():
 
         # Recommends are disabled, filter it...
         if self.no_recommend == True:
-            if self.dl_layers == True:
+            if self.dl_layers != -1:
                 newRecommendedlayers = []
                 for (lindex, layerBranch) in self.recommendedlayers:
                     layers = self.index.find_layer(lindex, id=layerBranch['layer'])
@@ -1068,7 +1071,11 @@ class Setup():
             fxml.write('    <remote  name="%s" fetch="%s"/>\n' % (remote, self.remotes[remote]))
 
         def open_xml_tag(name, url, remote, path, revision):
-            fxml.write('    <project name="%s" remote="%s" path="%s" revision="%s">\n' % (url, remote, path, revision))
+            # Full clone if self.dl_layers is 0
+            if (self.dl_layers != 0) and (name.endswith('-dl') or '-dl-' in name):
+                fxml.write('    <project name="%s" remote="%s" path="%s" revision="%s" clone-depth="%d">\n' % (url, remote, path, revision, self.dl_layers))
+            else:
+                fxml.write('    <project name="%s" remote="%s" path="%s" revision="%s">\n' % (url, remote, path, revision))
 
         def inc_xml(name, url, remote, path, revision):
             # incfile is included inline and has to work as elements of the 'project'

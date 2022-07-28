@@ -67,10 +67,16 @@ class Argparse_Wrl(Argparse_Setup):
                     for wrtemplate in t.split(','):
                         self.setup.wrtemplates.append(wrtemplate)
 
-        if parsed_args.dl_layers:
+        # -1: Not specified, skip dl layers
+        # --dl-layers: Specified without a value, full clone
+        # --dl-layers=<N>: Specified with N, clone-depth=<N>
+        if parsed_args.dl_layers != -1:
             self.layer_select = True
             if self.setup:
-                self.setup.dl_layers = parsed_args.dl_layers
+                if parsed_args.dl_layers is None:
+                    self.setup.dl_layers = 0
+                else:
+                    self.setup.dl_layers = parsed_args.dl_layers
 
         Argparse_Setup.handle_setup_args(self, parsed_args, args)
 
@@ -94,4 +100,4 @@ class Argparse_Wrl(Argparse_Setup):
     def add_layer_options(self):
         Argparse_Setup.add_layer_options(self)
         self.layer_args.add_argument('--templates', metavar='TEMPLATE', help='Select layers(s) based on template(s) and add them by default to the builds', nargs='+')
-        self.layer_args.add_argument('--dl-layers', help='Enable download layers; these layers include predownloaded items', action='store_true')
+        self.layer_args.add_argument('--dl-layers', metavar='DEPTH', help='Enable download layers and specify clone depth, the default is full clone, these layers include predownloaded items.', action='store', nargs='?', default=-1, type=int)
