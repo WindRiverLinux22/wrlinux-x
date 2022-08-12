@@ -1072,7 +1072,7 @@ class Setup():
 
         def open_xml_tag(name, url, remote, path, revision):
             # Full clone if self.dl_layers is 0
-            if (self.dl_layers != 0) and (name.endswith('-dl') or '-dl-' in name):
+            if (not self.dl_layers in (-1, 0)) and (name.endswith('-dl') or '-dl-' in name):
                 fxml.write('    <project name="%s" remote="%s" path="%s" revision="%s" clone-depth="%d">\n' % (url, remote, path, revision, self.dl_layers))
             else:
                 fxml.write('    <project name="%s" remote="%s" path="%s" revision="%s">\n' % (url, remote, path, revision))
