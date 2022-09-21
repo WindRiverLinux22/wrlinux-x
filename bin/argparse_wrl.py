@@ -100,4 +100,4 @@ class Argparse_Wrl(Argparse_Setup):
     def add_layer_options(self):
         Argparse_Setup.add_layer_options(self)
         self.layer_args.add_argument('--templates', metavar='TEMPLATE', help='Select layers(s) based on template(s) and add them by default to the builds', nargs='+')
-        self.layer_args.add_argument('--dl-layers', metavar='DEPTH', help='Enable download layers and specify clone depth, the default is full clone, these layers include predownloaded items.', action='store', nargs='?', default=-1, type=int)
+        self.layer_args.add_argument('--dl-layers', metavar='DEPTH', help='Enable download layers and specify clone depth, the default is full clone, these layers include predownloaded items. The network download will be enabled when this option is not specified.', action='store', nargs='?', default=-1, type=int)

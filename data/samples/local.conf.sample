@@ -14,8 +14,7 @@
 #
 # Network Control
 #
-# Disable bitbake from being able to access the network
-BB_NO_NETWORK ?= '1'
+BB_NO_NETWORK ?= '####BB_NO_NETWORK####'
 
 # Only allow downloads from PREMIRRORs, not search the main SRC_URI or MIRRORS.
 # If you have enabled download (dl-layers), use this to restrict fetch to those
