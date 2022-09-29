@@ -1,0 +1,1 @@
+    <project name="external/yocto/github.com.axxia.axxia_u-boot" remote="base" path="layers/axxiaarm-dl/git/github.com.axxia.axxia_u-boot.git" bare="True"/>
