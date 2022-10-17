@@ -1,1 +1,0 @@
-    <project name="external/yocto/github.com.Linaro.OpenCSD" remote="base" path="layers/marvell-cn9xxx-dl/git/github.com.Linaro.OpenCSD.git" bare="True"/>
