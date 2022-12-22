@@ -2,3 +2,4 @@
     <project name="external/yocto/github.com.nxp-qoriq.ceetm" remote="base" path="layers/meta-freescale-dl/git/github.com.nxp-qoriq.ceetm" bare="True"/>
     <project name="external/yocto/github.com.nxp-qoriq.restool" remote="base" path="layers/meta-freescale-dl/git/github.com.nxp-qoriq.restool" bare="True"/>
     <project name="external/yocto/github.com.nxp-qoriq.fmlib" remote="base" path="layers/meta-freescale-dl/git/github.com.nxp-qoriq.fmlib" bare="True"/>
+    <project name="external/yocto/github.com.nxp-qoriq.dce" remote="base" path="layers/meta-freescale-dl/git/github.com.nxp-qoriq.dce" bare="True"/>
