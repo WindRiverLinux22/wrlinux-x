@@ -160,3 +160,4 @@
     <project name="external/yocto/git.kernel.org.pub.scm.network.nfc.neard" remote="base" path="layers/oe-core-dl-4.0/git/git.kernel.org.pub.scm.network.nfc.neard.git" bare="True"/>
     <project name="external/yocto/github.com.libuv.libuv" remote="base" path="layers/oe-core-dl-4.0/git/github.com.libuv.libuv.git" bare="True"/>
     <project name="external/yocto/git.yoctoproject.org.opkg-utils" remote="base" path="layers/oe-core-dl-4.0/git/git.yoctoproject.org.opkg-utils" bare="True"/>
+    <project name="external/yocto/github.com.anholt.libepoxy" remote="base" path="layers/oe-core-dl-4.0/git/github.com.anholt.libepoxy" bare="True"/>
