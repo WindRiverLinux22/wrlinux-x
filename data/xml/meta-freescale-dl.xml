@@ -6,3 +6,4 @@
     <project name="external/yocto/github.com.nxp-qoriq.qbman_userspace" remote="base" path="layers/meta-freescale-dl/git/github.com.nxp-qoriq.qbman_userspace" bare="True"/>
     <project name="external/yocto/github.com.nxp-qoriq.fmc" remote="base" path="layers/meta-freescale-dl/git/github.com.nxp-qoriq.fmc" bare="True"/>
     <project name="external/yocto/github.com.nxp-qoriq.rcw" remote="base" path="layers/meta-freescale-dl/git/github.com.nxp-qoriq.rcw" bare="True"/>
+    <project name="external/yocto/github.com.nxp-qoriq.tsntool" remote="base" path="layers/meta-freescale-dl/git/github.com.nxp-qoriq.tsntool" bare="True"/>
