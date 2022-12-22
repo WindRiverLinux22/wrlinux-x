@@ -2,3 +2,4 @@
     <project name="external/yocto/git.ti.com.git.jacinto7_multimedia.viddec-test-app" remote="base" path="layers/meta-ti-dl/git/git.ti.com.git.jacinto7_multimedia.viddec-test-app.git" bare="True"/>
     <project name="external/yocto/git.ti.com.git.jacinto7_multimedia.videnc-test-app" remote="base" path="layers/meta-ti-dl/git/git.ti.com.git.jacinto7_multimedia.videnc-test-app.git" bare="True"/>
     <project name="external/yocto/git.ti.com.git.rpmsg.ti-rpmsg-char" remote="base" path="layers/meta-ti-dl/git/git.ti.com.git.rpmsg.ti-rpmsg-char.git" bare="True"/>
+    <project name="external/yocto/git.ti.com.git.processor-firmware.ti-linux-firmware" remote="base" path="layers/meta-ti-dl/git/git.ti.com.git.processor-firmware.ti-linux-firmware.git" bare="True"/>
