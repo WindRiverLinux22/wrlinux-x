@@ -1,4 +1,4 @@
-    <project name="external/yocto/source.codeaurora.org.external.autobsps32.u-boot" remote="base" path="layers/nxp-s32g-dl/git/source.codeaurora.org.external.autobsps32.u-boot" bare="True"/>
-    <project name="external/yocto/source.codeaurora.org.external.autobsps32.extra.pfeng" remote="base" path="layers/nxp-s32g-dl/git/source.codeaurora.org.external.autobsps32.extra.pfeng" bare="True"/>
-    <project name="external/yocto/source.codeaurora.org.external.autobsps32.arm-trusted-firmware" remote="base" path="layers/nxp-s32g-dl/git/source.codeaurora.org.external.autobsps32.arm-trusted-firmware" bare="True"/>
-    <project name="external/yocto/source.codeaurora.org.external.autobsps32.ipcf.ipc-shm" remote="base" path="layers/nxp-s32g-dl/git/source.codeaurora.org.external.autobsps32.ipcf.ipc-shm" bare="True"/>
+    <project name="external/yocto/github.com.nxp-auto-linux.u-boot.git" remote="base" path="layers/nxp-s32g-dl/git/github.com.nxp-auto-linux.u-boot.git" bare="True"/>
+    <project name="external/yocto/github.com.nxp-auto-linux.pfeng.git" remote="base" path="layers/nxp-s32g-dl/git/github.com.nxp-auto-linux.pfeng.git" bare="True"/>
+    <project name="external/yocto/github.com.nxp-auto-linux.arm-trusted-firmware.git" remote="base" path="layers/nxp-s32g-dl/git/github.com.nxp-auto-linux.arm-trusted-firmware.git" bare="True"/>
+    <project name="external/yocto/github.com.nxp-auto-linux.ipc-shm.git" remote="base" path="layers/nxp-s32g-dl/git/github.com.nxp-auto-linux.ipc-shm.git" bare="True"/>
