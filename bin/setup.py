@@ -974,17 +974,6 @@ class Setup():
             if '####DEFAULTWRTEMPLATE####' in line:
                 dst.write(line.replace('####DEFAULTWRTEMPLATE####', ' '.join(self.wrtemplates)))
                 continue
-
-            if '####BB_NO_NETWORK####' in line:
-                # Enable network download when --dl-layers is not specified
-                if self.dl_layers == -1:
-                    bb_no_network = "0"
-                else:
-                    bb_no_network = "1"
-                logger.plain('Setting BB_NO_NETWORK to "%s"' % bb_no_network)
-                dst.write(line.replace('####BB_NO_NETWORK####', bb_no_network))
-                continue
-
             dst.write(line)
 
         src.close()
