@@ -182,3 +182,4 @@
     <project name="external/yocto/github.com.moby.moby" remote="base" path="layers/meta-virtualization-dl-4.0/git/github.com.moby.moby.git" bare="True"/>
     <project name="external/yocto/github.com.containers.buildah" remote="base" path="layers/meta-virtualization-dl-4.0/git/github.com.containers.buildah.git" bare="True"/>
     <project name="external/yocto/github.com.kubernetes-sigs.cri-o" remote="base" path="layers/meta-virtualization-dl-4.0/git/github.com.kubernetes-sigs.cri-o.git" bare="True"/>
+    <project name="external/yocto/github.com.kubernetes-sigs.cri-tools" remote="base" path="layers/meta-virtualization-dl-4.0/git/github.com.kubernetes-sigs.cri-tools.git" bare="True"/>
