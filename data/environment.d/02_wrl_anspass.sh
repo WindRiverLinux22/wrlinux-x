@@ -28,6 +28,14 @@ if [ "${args/--no-anspass//}" != "${args}" -o "${BASEURL##ssh://}" != "${BASEURL
 	export NO_ANSPASS=1
 fi
 
+if [ "${BASEURL##ssh://}" != "${BASEURL}" ] ; then
+	echo
+	echo "================================================================"
+	echo "Using ssh:// protocol to download the product, it may be helpful"
+	echo "to use ssh-agent to manage the ssh authentication."
+	echo "================================================================"
+fi
+
 if [ "$NO_ANSPASS" = "" ] ; then
 setup_add_func anspass_setup
 

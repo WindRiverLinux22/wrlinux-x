@@ -15,12 +15,13 @@
 
 # This needs to be run BEFORE we run any password checks...
 
-setup_add_arg --user WINDSHARE_USER
-setup_add_arg --password WINDSHARE_PASS
-
-setup_add_func askpass_setup
-
-setup_shutdown_func askpass_shutdown
+# disable askpass if the url is using ssh.
+if [ "${BASEURL##ssh://}" == "${BASEURL}" ] ; then
+	setup_add_arg --user WINDSHARE_USER
+	setup_add_arg --password WINDSHARE_PASS
+	setup_add_func askpass_setup
+	setup_shutdown_func askpass_shutdown
+fi
 
 askpass_setup() {
 	# These values may also be used by anspass
