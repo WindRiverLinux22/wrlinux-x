@@ -150,3 +150,4 @@
     <project name="external/yocto/github.com.denix0.devmem2" remote="base" path="layers/meta-openembedded-dl-4.0/git/github.com.denix0.devmem2.git" bare="True"/>
     <project name="external/yocto/github.com.flatpak.libportal" remote="base" path="layers/meta-openembedded-dl-4.0/git/github.com.flatpak.libportal.git" bare="True"/>
     <project name="external/yocto/github.com.stedolan.jq" remote="base" path="layers/meta-openembedded-dl-4.0/git/github.com.stedolan.jq.git" bare="True"/>
+    <project name="external/yocto/github.com.ARMmbed.mbedtls" remote="base" path="layers/meta-openembedded-dl-4.0/git/github.com.ARMmbed.mbedtls.git" bare="True"/>
