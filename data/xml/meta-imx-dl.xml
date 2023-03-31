@@ -1,0 +1,1 @@
+    <project name="external/yocto/github.com.KDE.extra-cmake-modules" remote="base" path="layers/meta-imx-dl/git/github.com.KDE.extra-cmake-modules.git" bare="True"/>
