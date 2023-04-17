@@ -2,3 +2,4 @@
     <project name="external/yocto/github.com.nxp-auto-linux.pfeng" remote="base" path="layers/nxp-s32g-dl/git/github.com.nxp-auto-linux.pfeng.git" bare="True"/>
     <project name="external/yocto/github.com.nxp-auto-linux.arm-trusted-firmware" remote="base" path="layers/nxp-s32g-dl/git/github.com.nxp-auto-linux.arm-trusted-firmware.git" bare="True"/>
     <project name="external/yocto/github.com.nxp-auto-linux.ipc-shm" remote="base" path="layers/nxp-s32g-dl/git/github.com.nxp-auto-linux.ipc-shm.git" bare="True"/>
+    <project name="external/yocto/github.com.nxp-auto-linux.pkcs11-hse" remote="base" path="layers/nxp-s32g-dl/git/github.com.nxp-auto-linux.pkcs11-hse.git" bare="True"/>
