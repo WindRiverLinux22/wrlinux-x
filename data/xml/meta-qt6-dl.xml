@@ -5,3 +5,4 @@
     <project name="external/qt/code.qt.io.qt.qtlanguageserver" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qtlanguageserver.git" bare="True"/>
     <project name="external/qt/code.qt.io.qt.qtshadertools" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qtshadertools.git" bare="True"/>
     <project name="external/qt/code.qt.io.playground.qlitehtml" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.playground.qlitehtml.git" bare="True"/>
+    <project name="external/qt/github.com.litehtml.litehtml" remote="base" path="layers/meta-qt6-dl/git/github.com.litehtml.litehtml.git" bare="True"/>
