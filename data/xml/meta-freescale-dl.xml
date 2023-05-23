@@ -7,4 +7,4 @@
     <project name="external/yocto/github.com.nxp-qoriq.fmc" remote="base" path="layers/meta-freescale-dl/git/github.com.nxp-qoriq.fmc" bare="True"/>
     <project name="external/yocto/github.com.nxp-qoriq.rcw" remote="base" path="layers/meta-freescale-dl/git/github.com.nxp-qoriq.rcw" bare="True"/>
     <project name="external/yocto/github.com.nxp-qoriq.tsntool" remote="base" path="layers/meta-freescale-dl/git/github.com.nxp-qoriq.tsntool" bare="True"/>
-    <project name="external/yocto/source.codeaurora.org.external.qoriq.qoriq-components.dpdk" remote="base" path="layers/meta-freescale-dl/git/source.codeaurora.org.external.qoriq.qoriq-components.dpdk" bare="True"/>
+    <project name="external/yocto/github.com.nxp-qoriq.dpdk" remote="base" path="layers/meta-freescale-dl/git/github.com.nxp-qoriq.dpdk" bare="True"/>
