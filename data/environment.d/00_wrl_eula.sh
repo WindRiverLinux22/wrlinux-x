@@ -71,7 +71,7 @@ eula_askuser() {
 		echo "EULA_DATE=\"$(date)\""
 		echo "EULA_USER=\"$(whoami)@$(hostname)\""
 		echo "EULA_VERSION=\"$(tail -n 1 ${BASEDIR}/EULA)\""
-		echo "EULA_SHA=\"$(shasum ${BASEDIR}/EULA | cut -d ' ' -f 1)\""
+		echo "EULA_SHA=\"$(LANG=C shasum ${BASEDIR}/EULA | cut -d ' ' -f 1)\""
 		echo
 	} > config/eula_accepted
 }
@@ -80,7 +80,7 @@ eula_setup() {
 	if [ -e config/eula_accepted ]; then
 		. ./config/eula_accepted
 	fi
-	NEW_SHA=$(shasum ${BASEDIR}/EULA | cut -d ' ' -f 1)
+	NEW_SHA=$(LANG=C shasum ${BASEDIR}/EULA | cut -d ' ' -f 1)
 	if [ -n "${EULA_SHA}" -a "${NEW_SHA}" != "${EULA_SHA}" ]; then
 		echo "The End User User License has changed since you last agreed to it."
 		EULA_SHA=""
