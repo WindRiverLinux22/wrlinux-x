@@ -319,6 +319,11 @@ if [ $? -ne 0 ]; then
 fi
 
 # Python 3 required utf-8 support to work properly, adjust the LANG to en_US.UTF-8.
+python3 -c 'import locale ; locale.setlocale(locale.LC_CTYPE, ("en_US", "UTF-8"))' >/dev/null 2>&1
+if [ $? -ne 0 ]; then
+	echo >&2 "Please make sure locale 'en_US.UTF-8' is available on your system"
+	exit 1
+fi
 export LANG='en_US.UTF-8'
 
 # Pass the computed url and branch to ${cmd}
