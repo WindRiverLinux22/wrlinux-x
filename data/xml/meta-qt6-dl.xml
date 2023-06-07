@@ -2,7 +2,42 @@
     <project name="external/qt5/code.qt.io.qt.qtdeclarative" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qtdeclarative.git" bare="True"/>
     <project name="external/qt5/code.qt.io.qt.qttools" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qttools.git" bare="True"/>
     <project name="external/qt5/code.qt.io.qt.qttranslations" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qttranslations.git" bare="True"/>
+    <project name="external/qt5/code.qt.io.qt.qt3d" path="layers/meta-qt6-dl/git/code.qt.io.qt.qt3d.git" bare="True"/>
+    <project name="external/qt5/code.qt.io.qt.qtcharts" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qtcharts.git" bare="True"/>
+    <project name="external/qt5/code.qt.io.qt.qtconnectivity" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qtconnectivity.git" bare="True"/>
+    <project name="external/qt5/code.qt.io.qt.qtimageformats" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qtimageformats.git" bare="True"/>
+    <project name="external/qt5/code.qt.io.qt.qtlocation" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qtlocation.git" bare="True"/>
+    <project name="external/qt5/code.qt.io.qt.qtmqtt" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qtmqtt.git" bare="True"/>
+    <project name="external/qt5/code.qt.io.qt.qtmultimedia" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qtmultimedia.git" bare="True"/>
+    <project name="external/qt5/code.qt.io.qt.qtsensors" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qtsensors.git" bare="True"/>
+    <project name="external/qt5/code.qt.io.qt.qtserialbus" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qtserialbus.git" bare="True"/>
+    <project name="external/qt5/code.qt.io.qt.qtserialport" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qtserialport.git" bare="True"/>
+    <project name="external/qt5/code.qt.io.qt.qtsvg" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qtsvg.git" bare="True"/>
+    <project name="external/qt5/code.qt.io.qt.qtwayland" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qtwayland.git" bare="True"/>
+    <project name="external/qt5/code.qt.io.qt.qtwebchannel" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qtwebchannel.git" bare="True"/>
+    <project name="external/qt5/code.qt.io.qt.qtwebsockets" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qtwebsockets.git" bare="True"/>
     <project name="external/qt/code.qt.io.qt.qtlanguageserver" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qtlanguageserver.git" bare="True"/>
     <project name="external/qt/code.qt.io.qt.qtshadertools" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qtshadertools.git" bare="True"/>
     <project name="external/qt/code.qt.io.playground.qlitehtml" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.playground.qlitehtml.git" bare="True"/>
     <project name="external/qt/github.com.litehtml.litehtml" remote="base" path="layers/meta-qt6-dl/git/github.com.litehtml.litehtml.git" bare="True"/>
+    <project name="external/qt/code.qt.io.qt-labs.qtquickdesigner-components" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt-labs.qtquickdesigner-components.git" bare="True"/>
+    <project name="external/qt/code.qt.io.qt.qt5compat" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qt5compat.git" bare="True"/>
+    <project name="external/qt/code.qt.io.qt.qtapplicationmanager" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qtapplicationmanager.git" bare="True"/>
+    <project name="external/qt/code.qt.io.qt.qtcoap" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qtcoap.git" bare="True"/>
+    <project name="external/qt/code.qt.io.qt.qtdatavis3d" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qtdatavis3d.git" bare="True"/>
+    <project name="external/qt/code.qt.io.qt.qtdeviceutilities" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qtdeviceutilities.git" bare="True"/>
+    <project name="external/qt/code.qt.io.qt.qtgrpc" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qtgrpc.git" bare="True"/>
+    <project name="external/qt/code.qt.io.qt.qthttpserver" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qthttpserver.git" bare="True"/>
+    <project name="external/qt/code.qt.io.qt.qtinterfaceframework" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qtinterfaceframework.git" bare="True"/>
+    <project name="external/qt/code.qt.io.qt.qtlottie" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qtlottie.git" bare="True"/>
+    <project name="external/qt/code.qt.io.qt.qtnetworkauth" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qtnetworkauth.git" bare="True"/>
+    <project name="external/qt/code.qt.io.qt.qtopcua" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qtopcua.git" bare="True"/>
+    <project name="external/qt/code.qt.io.qt.qtpositioning" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qtpositioning.git" bare="True"/>
+    <project name="external/qt/code.qt.io.qt.qtquick3d-assimp" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qtquick3d-assimp.git" bare="True"/>
+    <project name="external/qt/code.qt.io.qt.qtquick3d" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qtquick3d.git" bare="True"/>
+    <project name="external/qt/code.qt.io.qt.qtquicktimeline" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qtquicktimeline.git" bare="True"/>
+    <project name="external/qt/code.qt.io.qt.qtremoteobjects" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qtremoteobjects.git" bare="True"/>
+    <project name="external/qt/code.qt.io.qt.qtscxml" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qtscxml.git" bare="True"/>
+    <project name="external/qt/code.qt.io.qt.qtspeech" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qtspeech.git" bare="True"/>
+    <project name="external/qt/code.qt.io.qt.qtvirtualkeyboard" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qtvirtualkeyboard.git" bare="True"/>
+    <project name="external/qt/code.qt.io.qt.qtquick3dphysics" remote="base" path="layers/meta-qt6-dl/git/code.qt.io.qt.qtquick3dphysics.git" bare="True"/>
