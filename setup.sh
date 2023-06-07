@@ -235,6 +235,14 @@ if [ -z "${BASEBRANCH}" ]; then
 	fi
 fi
 
+# Make sure locale related support on build host
+# as it required utf-8 support to work properly
+python3 -c 'import locale ; locale.setlocale(locale.LC_CTYPE, ("en_US", "UTF-8"))' >/dev/null 2>&1
+if [ $? -ne 0 ]; then
+	echo >&2 "Please make sure locale 'en_US.UTF-8' is available on your system"
+	exit 1
+fi
+
 # Load custom setup additions
 if [ -d "${BASEDIR}/data/environment.d" ]; then
 	for envfile in ${BASEDIR}/data/environment.d/*.sh ; do
