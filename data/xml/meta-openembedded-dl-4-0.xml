@@ -153,3 +153,4 @@
     <project name="external/yocto/github.com.ARMmbed.mbedtls" remote="base" path="layers/meta-openembedded-dl-4.0/git/github.com.ARMmbed.mbedtls.git" bare="True"/>
     <project name="external/yocto/github.com.OpenSC.OpenSC" remote="base" path="layers/meta-openembedded-dl-4.0/git/github.com.OpenSC.OpenSC.git" bare="True"/>
     <project name="external/yocto/git.kernel.org.pub.scm.devel.pahole.pahole" remote="base" path="layers/meta-openembedded-dl-4.0/git/git.kernel.org.pub.scm.devel.pahole.pahole.git" bare="True"/>
+    <project name="external/yocto/github.com.Reference-LAPACK.lapack" remote="base" path="layers/meta-openembedded-dl-4.0/git/github.com.Reference-LAPACK.lapack.git" bare="True"/>
