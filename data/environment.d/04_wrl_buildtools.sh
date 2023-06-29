@@ -42,10 +42,9 @@ buildtools_setup() {
 		BUILDTOOLSBRANCH="${BASEBRANCH}"
 	fi
 
-	# gcc 7.5.0 is the minimal version to build qemu-native
-        # see error info "You need at least GCC v7.5 or Clang v6.0 (or XCode Clang v10.0)"
+	#qt6 require at least gcc9+
 	gcc_cur_ver=$(gcc -dumpfullversion -dumpversion 2>/dev/null)
-	required_ver=7.5.0
+	required_ver=9.3.1
 
 	# check whether host gcc version less than $required_ver
 	if [ ! "$(printf '%s\n' "$required_ver" "$gcc_cur_ver" | sort -V | head -n1)" = "$required_ver" ]; then
