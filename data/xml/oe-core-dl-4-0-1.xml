@@ -160,3 +160,4 @@
     <project name="external/yocto/github.com.libuv.libuv" remote="base" path="layers/oe-core-dl-4.0.1/git/github.com.libuv.libuv.git" bare="True"/>
     <project name="external/yocto/git.yoctoproject.org.opkg-utils" remote="base" path="layers/oe-core-dl-4.0.1/git/git.yoctoproject.org.opkg-utils" bare="True"/>
     <project name="external/yocto/github.com.anholt.libepoxy" remote="base" path="layers/oe-core-dl-4.0.1/git/github.com.anholt.libepoxy" bare="True"/>
+    <project name="external/yocto/github.com.NetworkConfiguration.dhcpcd" remote="base" path="layers/oe-core-dl-4.0.1/git/github.com.NetworkConfiguration.dhcpcd" bare="True"/>
